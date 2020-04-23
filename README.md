@@ -20,15 +20,16 @@ Things you may want to cover:
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
-|group_id|integer|null: false, foreign_key: true|
+
 ### Association
 - has_many :posts
 - has_many :groups, through: :groups_users
-
+- has_many :groups_users
 ## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |message|text|null: false|
+|image|string|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
@@ -38,12 +39,12 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
+|name|text|null: false|
+
 ### Association
 - has_many :posts
 - has_many :users, through: :groups_users
-
+- has_many :groups_users
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
