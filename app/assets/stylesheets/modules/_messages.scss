@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     &__top-items {
-      background-color: #d8d8d8;
+      
       height: 20px;
       width: 260px;
       margin-right: 20px;
@@ -22,9 +22,20 @@
       &__name {
         line-height: 20px;
         width: 40px;
+        color: #ffffff;
       }
       &__icons {
         width: 60px;
+        text-align: right;
+        &--edit {
+          text-decoration: none;
+          color: #ffffff;
+        }
+        &--cog {
+          text-decoration: none;
+          color: #ffffff;
+          margin-left: 5px;
+        }
       }
     }
   }
