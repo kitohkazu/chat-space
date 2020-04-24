@@ -23,6 +23,8 @@
         line-height: 20px;
         width: 40px;
         color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
       }
       &__icons {
         width: 60px;
@@ -43,6 +45,22 @@
   &__group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    &__group {
+      height: 65px;
+      &__name {
+        font-size: 15px;
+        color: #ffffff;
+        padding: 20px 0 0 20px;
+        font-weight: bold;
+      }
+      &__new-message {
+        font-size: 11px;
+        color: #ffffff;
+        padding: 5px 0 40px 20px;
+        font-weight: bold;
+      }
+
+    }
   }
 }
 
