@@ -8,8 +8,27 @@
   float: left;
   height: 100vh;
   &__user-name {
-    height: calc(100px);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    &__top-items {
+      background-color: #d8d8d8;
+      height: 20px;
+      width: 260px;
+      margin-right: 20px;
+      margin-left: 20px;
+      display: flex;
+      justify-content: space-between;
+      &__name {
+        line-height: 20px;
+        width: 40px;
+      }
+      &__icons {
+        width: 60px;
+      }
+    }
   }
+  
   &__group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
