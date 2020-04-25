@@ -1,21 +1,23 @@
 .side-bar
-  .side-bar__user-name
-    .side-bar__user-name__top-items
-      .side-bar__user-name__top-items__name
+  .user-name
+    .user-name__top-items
+      .user-name__top-items__name
         name
-      .side-bar__user-name__top-items__icons
-        = link_to "#", class: "side-bar__user-name__top-items__icons--edit" do
+      .user-name__top-items__icons
+        = link_to "#", class: "user-name__top-items__icons--edit" do
           = icon('fa', 'edit')
-        = link_to "#", class: "side-bar__user-name__top-items__icons--cog" do
+        = link_to "#", class: "user-name__top-items__icons--cog" do
           = icon('fa', 'cog')
-  .side-bar__group-list
-    .side-bar__group-list__group
-      .side-bar__group-list__group__name
+
+
+  .group-list
+    .group-list__group
+      .group-list__group__name
         techcamp
-      .side-bar__group-list__group__new-message
+      .group-list__group__new-message
         まだメッセージはありません
-    .side-bar__group-list__group
-      .side-bar__group-list__group__name
+    .group-list__group
+      .group-list__group__name
         techcamp
-      .side-bar__group-list__group__new-message
+      .group-list__group__new-message
         まだメッセージはありません
