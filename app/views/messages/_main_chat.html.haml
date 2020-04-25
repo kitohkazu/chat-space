@@ -1,0 +1,43 @@
+.main-chat
+  .group-info
+    .group-info__left
+      %h2
+        test
+      %p
+        Menmber: name
+    = link_to "#", class: "group-info__edit-btn" do
+      Edit
+
+
+  .message-list
+    .message-list__title
+      .message-list__title__name
+        name
+      .message-list__title__date
+        2020/04/25(Sat) 00:53:20
+    .message-list__text
+      おはよう！
+    .message-list__title
+      .message-list__title__name
+        name
+      .message-list__title__date
+        2020/04/25(Sat) 00:53:20
+    .message-list__text
+      おはよう！
+    .message-list__title
+      .message-list__title__name
+        name
+      .message-list__title__date
+        2020/04/25(Sat) 00:53:20
+    .message-list__text
+      おはよう！
+
+
+  .message-form
+    %form 
+      .form-box
+        %input{class: "form-box__text", type: "text", placeholder: "type a message"}
+        %label{class: "form-box__image"}
+          = icon('far', 'image')
+          %input{class: "form-box__image__file", type: "file"}
+      %input{class: "form-submit", type: "submit", value: "Send"}
