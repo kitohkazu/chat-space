@@ -2,9 +2,12 @@
   .group-info
     .group-info__left
       %h2
-        test
+        = @group.name
       %p
-        Menmber: name
+        %span<>
+          Member：
+        - @group.users.each do |user|
+          = user.name
     = link_to "#", class: "group-info__edit-btn" do
       Edit
 
