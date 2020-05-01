@@ -51,7 +51,12 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.message-list').append(html);
-      $('#message_content').val('');
+      $('.message-list').animate({ scrollTop: $('.message-list')[0].scrollHeight});
+      $('#new_message')[0].reset();
+      $(".form-submit").prop("disabled", false);
     })
-  })
+    .fail(function() {
+      alert("メッセージ送信に失敗しました");
+    });
+  });
 });
